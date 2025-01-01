@@ -133,7 +133,7 @@ export class News extends Component {
                     <img
                       src={article.urlToImage || "news.png"}
                       className="card-img-top"
-                      alt="news"
+                      alt={article.title}
                     />
                     <div className="card-body">
                       <h5 className="card-title">
