@@ -55,7 +55,7 @@ class About extends Component {
             <img
               className="number6img"
               src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d12.png"
-              alt="Creative  6"
+              alt="Creative Image 6"
             />
           </div>
         </div>

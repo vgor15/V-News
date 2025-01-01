@@ -33,29 +33,29 @@ class About extends Component {
             <img
               className="number3img"
               src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b245.png"
-              alt="Creative  3"
+              alt="Creative Image 3"
             />
             <img
               className="number5img"
               src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Customer supports.png"
-              alt="Creative  4"
+              alt="Creative Image 4"
             />
             <iframe
               allowFullScreen="allowFullScreen"
               className="number4vid"
               poster="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b242.png"
               src="https://www.youtube.com/embed/svg%3E?"
-              title="Creative "
+              title="Creative Video"
             ></iframe>
             <img
               className="number7img"
               src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d51.png"
-              alt="Creative  5"
+              alt="Creative Image 5"
             />
             <img
               className="number6img"
               src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d12.png"
-              alt="Creative  6"
+              alt="Creative Image 6"
             />
           </div>
         </div>
