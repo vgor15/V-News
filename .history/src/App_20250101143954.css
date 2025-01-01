@@ -1,0 +1,169 @@
+/* General Card Styles */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    #ada996,
+    #f2f2f2,
+    #dbdbdb,
+    #eaeaea
+  ); /* Soft pastel gradient */
+  background-size: 200% 200%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: gradientShift 3s ease infinite;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 25px rgba(174, 214, 241, 0.7);
+  animation: glowPulse 1.5s infinite;
+}
+
+/* Card Title Styles */
+.card-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  max-height: 5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Card Text Styles */
+.card-text {
+  color: #34495e; 
+  max-height: 6rem; 
+  overflow: hidden; /* Hide overflowed content */
+  display: -webkit-box; /* Use for line clamping */
+  -webkit-line-clamp: 4; /* Limit to 4 lines */
+  -webkit-box-orient: vertical; /* Required for line clamping */
+}
+
+/* Card Image Styles */
+.card-img-top {
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Scale image without distortion */
+  border-radius: 12px 12px 0 0; /* Smooth rounded corners for top image */
+}
+
+/* Card Body Styles */
+.card-body {
+  flex-grow: 1; /* Ensure the body stretches to fill the card */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Keyframes for Pulsing Glow */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(174, 214, 241, 0.7);
+  }
+  100% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+}
+
+/* BUTTON  */
+/* General Button Styles */
+.btn {
+  background: linear-gradient(
+    to right,
+    #6d6027,
+    #d3cbb8
+  ); /* Match card gradient */
+  background-size: 200% 200%; /* For animated gradient effect */
+  color: #2c3e50; /* Deep gray text for contrast */
+  border: none;
+  border-radius: 6px; /* Rounded corners */
+  padding: 10px 20px; /* Comfortable button size */
+  font-size: 1rem; /* Readable font size */
+  font-weight: bold; /* Emphasize text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth hover and animation effects */
+  animation: gradientShift 3s ease infinite; /* Same gradient animation as card */
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: scale(1.05); /* Increase size slightly on hover */
+  background: linear-gradient(
+    to right,
+    #d3cbb8 #6d6027
+  ); /* Reverse gradient for hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 25px #d3cbb8; /* Glow effect */
+}
+
+/* Disabled Button Styles */
+.btn:disabled {
+  background: #bdc3c7; /* Muted gray for disabled state */
+  color: #7f8c8d; /* Lighter text for clarity */
+  cursor: not-allowed;
+  box-shadow: none; /* No hover effects for disabled button */
+}
+.btn:active {
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5); /* Subtle click shadow */
+  background: linear-gradient(
+    to right,
+    #f2f2f2,
+    #dbdbdb,
+    #eaeaea,
+    #ada996
+  ); /* Reverse gradient for pressed state */
+}
+
+/* Button Animation (Optional Glow Pulse) */
+@keyframes buttonGlowPulse {
+  0% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(174, 214, 241, 0.7);
+  }
+  100% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+}
+
+/* Apply Glow Animation on Hover */
+.btn:hover {
+  animation: buttonGlowPulse 1.5s infinite;
+}
+
+/* Read More Button Specific Styles */
+a.btn-primary {
+  background: linear-gradient(
+    to right,
+    #6d6027,
+    #d3cbb8
+  ); /* Subtle warm gradient */
+  color: #34495e; /* Slightly darker text for readability */
+  text-decoration: none; /* Remove underline for links */
+}
+
+a.btn-primary:hover {
+  background: linear-gradient(to right, #d3cbb8 #6d6027); /* Reverse gradient */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 20px rgba(236, 240, 241, 0.7); /* Warm glow */
+}

@@ -1,0 +1,168 @@
+/* General Card Styles */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    #ada996,
+    #f2f2f2,
+    #dbdbdb,
+    #eaeaea
+  ); /* Soft pastel gradient */
+  background-size: 200% 200%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: gradientShift 3s ease infinite;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 25px rgba(174, 214, 241, 0.7);
+  animation: glowPulse 1.5s infinite;
+}
+
+/* Card Title Styles */
+.card-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  max-height: 5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Card Text Styles */
+.card-text {
+  color: #34495e;
+  max-height: 6rem;
+  overflow: hidden;
+  display: -webkit-box; 
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical; 
+}
+
+/* Card Image Styles */
+.card-img-top {
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 12px 12px 0 0; 
+}
+
+/* Card Body Styles */
+.card-body {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Keyframes for Pulsing Glow */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(174, 214, 241, 0.7);
+  }
+  100% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+}
+
+/* BUTTON  */
+.btn {
+  background: linear-gradient(
+    to right,
+    #6d6027,
+    #d3cbb8
+  ); 
+  background-size: 200% 200%; 
+  color: #2c3e50; 
+  border: none;
+  border-radius: 6px; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; 
+  animation: gradientShift 3s ease infinite; 
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: scale(1.05); 
+  background: linear-gradient(
+    to right,
+    #d3cbb8 #6d6027
+  ); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 25px #d3cbb8;  
+}
+
+/* Disabled Button Styles */
+.btn:disabled {
+  background: #bdc3c7; 
+  color: #7f8c8d; 
+  cursor: not-allowed;
+  box-shadow: none; 
+}
+.btn:active {
+  transform: scale(0.95); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5); 
+  background: linear-gradient(
+    to right,
+    #f2f2f2,
+    #dbdbdb,
+    #eaeaea,
+    #ada996
+  ); /* Reverse gradient for pressed state */
+}
+
+/* Button Animation (Optional Glow Pulse) */
+@keyframes buttonGlowPulse {
+  0% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(174, 214, 241, 0.7);
+  }
+  100% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+}
+
+/* Apply Glow Animation on Hover */
+.btn:hover {
+  animation: buttonGlowPulse 1.5s infinite;
+}
+
+/* Read More Button Specific Styles */
+a.btn-primary {
+  background: linear-gradient(
+    to right,
+    #6d6027,
+    #d3cbb8
+  ); /* Subtle warm gradient */
+  color: #34495e; /* Slightly darker text for readability */
+  text-decoration: none; /* Remove underline for links */
+}
+
+a.btn-primary:hover {
+  background: linear-gradient(to right, #d3cbb8 #6d6027); /* Reverse gradient */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 20px rgba(236, 240, 241, 0.7); /* Warm glow */
+}

@@ -1,0 +1,36 @@
+.card {
+    height: 100%; /* Ensure uniform card height */
+    display: flex;
+    flex-direction: column; /* Stack card elements vertically */
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .card-title {
+    font-size: 1.2rem; /* Adjust as needed */
+    max-height: 3rem; /* Approx height for 2 lines of text */
+    overflow: hidden; /* Hide overflowed content */
+    display: -webkit-box; /* Use for line clamping */
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical; /* Required for line clamping */
+  }
+  
+  .card-text {
+    max-height: 4rem; /* Approx height for 3 lines of text */
+    overflow: auto; /* Hide overflowed content */
+    display: -webkit-box; /* Use for line clamping */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Required for line clamping */
+  }
+  
+  .card-img-top {
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Scale image without distortion */
+  }
+  
+  .card-body {
+    flex-grow: 1; /* Ensure the body stretches to fill the card */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  

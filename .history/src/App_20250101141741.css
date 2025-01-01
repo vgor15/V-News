@@ -1,0 +1,68 @@
+.card {
+  height: 100%; /* Ensure uniform card height */
+  display: flex;
+  flex-direction: column; /* Stack card elements vertically */
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Adjust as needed */
+  max-height: 3rem; /* Approx height for 2 lines of text */
+  overflow: scroll; /* Hide overflowed content */
+  display: -webkit-box; /* Use for line clamping */
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical; /* Required for line clamping */
+}
+
+.card-text {
+  max-height: 4rem; /* Approx height for 3 lines of text */
+  overflow: auto; /* Hide overflowed content */
+  display: -webkit-box; /* Use for line clamping */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Required for line clamping */
+}
+
+.card-img-top {
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Scale image without distortion */
+}
+
+.card-body {
+  flex-grow: 1; /* Ensure the body stretches to fill the card */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Style the parent container */
+.scroll-container {
+  max-height: 150px; /* Adjust height as needed */
+  overflow: scroll;
+  padding-right: 8px; /* Avoid content hiding behind the scrollbar */
+}
+
+/* Customize the scrollbar for Webkit-based browsers */
+.scroll-container::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track background color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb (draggable part) color */
+  border-radius: 4px; /* Rounded corners */
+  border: 2px solid #f0f0f0; /* Add padding around the thumb */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change thumb color on hover */
+}
+
+/* For Firefox */
+.scroll-container {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #888 #f0f0f0; /* Thumb and track colors */
+}

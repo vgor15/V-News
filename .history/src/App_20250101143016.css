@@ -1,0 +1,148 @@
+/* General Card Styles */
+.card {
+  height: 100%; /* Ensure uniform card height */
+  display: flex;
+  flex-direction: column; /* Stack card elements vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  background: linear-gradient(
+    to right,
+    #ada996,
+    #f2f2f2,
+    #dbdbdb,
+    #eaeaea
+  ); /* Soft pastel gradient */
+  background-size: 200% 200%;
+  border-radius: 12px; /* Smooth edges */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  animation: gradientShift 3s ease infinite; /* Gradient animation */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly increase card size */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 25px rgba(174, 214, 241, 0.7); /* Add glow effect */
+  animation: glowPulse 1.5s infinite; /* Pulsing glow on hover */
+}
+
+/* Card Title Styles */
+.card-title {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #2c3e50; /* Deep gray for better contrast */
+  max-height: 5rem; /* Approx height for 2 lines of text */
+  overflow: hidden; /* Hide overflowed content */
+  display: -webkit-box; /* Use for line clamping */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Required for line clamping */
+}
+
+/* Card Text Styles */
+.card-text {
+  color: #34495e; /* Softer gray for readability */
+  max-height: 6rem; /* Approx height for 3 lines of text */
+  overflow: hidden; /* Hide overflowed content */
+  display: -webkit-box; /* Use for line clamping */
+  -webkit-line-clamp: 4; /* Limit to 4 lines */
+  -webkit-box-orient: vertical; /* Required for line clamping */
+}
+
+/* Card Image Styles */
+.card-img-top {
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Scale image without distortion */
+  border-radius: 12px 12px 0 0; /* Smooth rounded corners for top image */
+}
+
+/* Card Body Styles */
+.card-body {
+  flex-grow: 1; /* Ensure the body stretches to fill the card */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Keyframes for Pulsing Glow */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(174, 214, 241, 0.7);
+  }
+  100% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 10px rgba(174, 214, 241, 0.5);
+  }
+}
+
+
+
+/* BUTTON  */
+/* General Button Styles */
+.btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for better size */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth hover effects */
+  }
+  
+  /* Hover Effects */
+  .btn:hover {
+    transform: scale(1.05); /* Slightly increase button size */
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    box-shadow: 0 8px 15px rgba(37, 117, 252, 0.5); /* Glow effect */
+  }
+  
+  /* Disabled Button Styles */
+  .btn:disabled {
+    background: #b2bec3; /* Muted gray for disabled state */
+    color: #636e72; /* Lighter text for disabled button */
+    cursor: not-allowed; /* Indicate disabled state */
+    box-shadow: none;
+  }
+  
+  /* Read More Button Specific Styles */
+  a.btn-primary {
+    background: linear-gradient(135deg, #ff6f61, #ff9a8b); /* Soft warm gradient */
+    color: #fff;
+    text-decoration: none; /* Remove underline for links */
+  }
+  
+  a.btn-primary:hover {
+    background: linear-gradient(135deg, #ff9a8b, #ff6f61); /* Reverse gradient */
+    box-shadow: 0 8px 15px rgba(255, 154, 139, 0.5); /* Warm glow */
+  }
+  
+  /* Keyframes for Button Pulse Animation (Optional) */
+  @keyframes buttonPulse {
+    0% {
+      box-shadow: 0 8px 15px rgba(37, 117, 252, 0.5);
+    }
+    50% {
+      box-shadow: 0 12px 20px rgba(37, 117, 252, 0.7);
+    }
+    100% {
+      box-shadow: 0 8px 15px rgba(37, 117, 252, 0.5);
+    }
+  }
+  
+  /* Applying Animation to Hovered Buttons */
+  .btn:hover {
+    animation: buttonPulse 1.5s infinite; /* Pulsing glow */
+  }
+  

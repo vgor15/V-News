@@ -1,0 +1,20 @@
+import React, { Component } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import News from "./components/News";
+import NewsItem from "./components/NewsItem";
+import Carousel from "./components/Carousel";
+
+//! CREATING CLASS BASED COMPONENT
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <Carousel />
+        <News />
+      </div>
+    );
+  }
+}

@@ -1,0 +1,35 @@
+GET https://newsapi.org/v2/top-headlines?country=us&apiKey=275020197cd4422097f7ca786748eb7fs
+
+{
+    "status": "ok",
+    "totalResults": 2,
+    "articles": [
+      {
+        "source": {
+          "id": "bbc-news",
+          "name": "BBC News"
+        },
+        "author": "BBC News",
+        "title": "Global markets rally after positive economic data",
+        "description": "Global markets saw significant gains following positive economic reports from major economies.",
+        "url": "https://www.bbc.com/news/business-123456",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/12345.jpg",
+        "publishedAt": "2024-12-30T10:30:00Z",
+        "content": "Global markets have rallied significantly as investors respond to economic data that suggests continued growth in major economies. Analysts are optimistic about the year ahead."
+      },
+      {
+        "source": {
+          "id": "cnn",
+          "name": "CNN"
+        },
+        "author": "John Doe",
+        "title": "Tech companies announce major innovations at CES",
+        "description": "At the annual Consumer Electronics Show, tech giants unveiled groundbreaking products.",
+        "url": "https://www.cnn.com/tech/ces-2024-announcements",
+        "urlToImage": "https://cdn.cnn.com/cnn/images/tech/ces-2024.jpg",
+        "publishedAt": "2024-12-29T14:15:00Z",
+        "content": "The Consumer Electronics Show (CES) 2024 has showcased innovations in AI, robotics, and green technology. Major companies, including TechCorp and InnovateX, highlighted new advancements."
+      }
+    ]
+  }
+  

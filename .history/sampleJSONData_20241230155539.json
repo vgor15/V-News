@@ -1,0 +1,106 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+      {
+        "source": {
+          "id": "reuters",
+          "name": "Reuters"
+        },
+        "author": "Reuters Staff",
+        "title": "China's December Manufacturing Activity Expands for Third Month",
+        "description": "China's manufacturing activity is anticipated to have expanded for the third consecutive month in December, providing optimism for stabilizing the world's second-largest economy amid potential new U.S. trade tariffs.",
+        "url": "https://www.reuters.com/world/china/chinas-dec-manufacturing-activity-seen-expanding-third-month-2024-12-30/",
+        "urlToImage": null,
+        "publishedAt": "2024-12-30T10:00:00Z",
+        "content": "A Reuters poll of 28 economists predicts the official purchasing managers' index (PMI) will remain at 50.3, indicating growth. Chinese leaders hope recent policy support will boost the property market and domestic demand, benefiting manufacturers amid a global economic slowdown."
+      },
+      {
+        "source": {
+          "id": "nypost",
+          "name": "New York Post"
+        },
+        "author": "New York Post Staff",
+        "title": "Major Companies and Universities Ditch DEI Policies in 2024",
+        "description": "In 2024, diversity, equity, and inclusion (DEI) policies faced substantial criticism and rollback from major U.S. companies and universities.",
+        "url": "https://nypost.com/2024/12/29/business/was-2024-the-year-dei-fell-apart/",
+        "urlToImage": null,
+        "publishedAt": "2024-12-30T09:00:00Z",
+        "content": "Companies like American Airlines and Walmart began abandoning DEI initiatives, citing concerns about legality and discrimination. At least a dozen prominent businesses, including Ford and Boeing, scaled back their DEI commitments."
+      },
+      {
+        "source": {
+          "id": "news.com.au",
+          "name": "News.com.au"
+        },
+        "author": "News.com.au Staff",
+        "title": "Australia's New Year's Eve Weather: Storms Expected in Queensland",
+        "description": "Australia will experience varied weather conditions on New Year's Eve, with storms expected in Queensland and clear skies in Sydney.",
+        "url": "https://www.news.com.au/technology/environment/storms-to-hit-qld-northern-nsw-on-new-years-eve-as-sydney-forecast-to-be-dry-for-fireworks/news-story/a5ea5973feee9c22361abd150e20cbba",
+        "urlToImage": null,
+        "publishedAt": "2024-12-30T08:00:00Z",
+        "content": "Sydney is expected to have clear skies for fireworks, while Queensland could see storms and showers due to high humidity. Southeastern Queensland faces heavy rain, damaging winds, and flash flooding."
+      },
+      {
+        "source": {
+          "id": "apnews",
+          "name": "Associated Press"
+        },
+        "author": "AP Staff",
+        "title": "Former President Jimmy Carter Dies at Age 100",
+        "description": "Former U.S. President and Nobel Peace Prize recipient Jimmy Carter has passed away at the age of 100.",
+        "url": "https://apnews.com/video/jimmy-carter-jimmy-carter-plane-crashes-israel-hamas-war-israel-government-6d38afc4aaa942e69b740eae6552d596",
+        "urlToImage": null,
+        "publishedAt": "2024-12-30T07:00:00Z",
+        "content": "Jimmy Carter, the 39th President of the United States, was known for his humanitarian efforts and commitment to peace. He served as president from 1977 to 1981 and was awarded the Nobel Peace Prize in 2002."
+      },
+      {
+        "source": {
+          "id": "hindustantimes",
+          "name": "Hindustan Times"
+        },
+        "author": "Hindustan Times Staff",
+        "title": "Man Convicted of Wife's Mass Rape in France Will Not Appeal",
+        "description": "Dominique Pelicot, convicted of drugging and raping his wife, will not appeal his 20-year sentence.",
+        "url": "https://www.hindustantimes.com/world-news/world-news-live-latest-updates-on-politics-economy-conflicts-climate-change-today-december-30-2024-101735504586103.html",
+        "urlToImage": null,
+        "publishedAt": "2024-12-30T06:00:00Z",
+        "content": "The Frenchman was found guilty of drugging and raping his ex-wife and encouraging several men to do the same. He has decided not to appeal his 20-year prison sentence."
+      },
+      {
+        "source": {
+          "id": "dw",
+          "name": "Deutsche Welle"
+        },
+        "author": "DW Staff",
+        "title": "Top Stories in 90 Seconds – December 30, 2024",
+        "description": "Full-length news bulletins providing key stories from Europe and around the world.",
+        "url": "https://www.dw.com/en/top-stories-in-90-seconds/video-49496622",
+        "urlToImage": null,
+        "publishedAt": "2024-12-30T05:00:00Z",
+        "content": "DW News goes deep beneath the surface, providing the key stories from Europe and around the world. Full-length news bulletins are available on the hour, every hour."
+      },
+      {
+        "source": {
+          "id": "ndtv",
+          "name": "NDTV"
+        },
+        "author": "NDTV Staff",
+        "title": "Top Headlines of the Day: December 30, 2024",
+        "description": "A summary of the top news stories for December 30, 2024.",
+        "url": "https://www.ndtv.com/video/top-headlines-of-the-day-december-30-2024-881709",
+        "urlToImage": null,
+        "publishedAt": "2024-12-30T04:00:00Z",
+        "content": "NDTV provides a concise summary of the top news stories for December 30, 2024, covering various topics including politics, economy, and international affairs."
+      },
+      {
+        "source": {
+          "id": "deccanherald",
+          "name": "Deccan Herald"
+        },
+        "author": "Deccan Herald Staff",
+        "title": "News in Pics: December 30, 2024 – Best Photos from Around the World",
+        "description": "A collection of the best photographs capturing global events on December 30, 2024.",
+       "url": "https://www.deccanherald.com/photos/news-in-pics-d",
+    },
+}
