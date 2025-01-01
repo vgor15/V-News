@@ -34,7 +34,7 @@ export class Navbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/src/components/About.js">
+                  <a className="nav-link" href="/about">
                     About US
                   </a>
                 </li>
@@ -49,22 +49,27 @@ export class Navbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link" href="/general">
+                    General
+                  </a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link" href="/health">
                     Health
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/science">
+                  <a className="nav-link" href="/">
                     Science
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/sport">
+                  <a className="nav-link" href="/">
                     Sports
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/technology">
+                  <a className="nav-link" href="/">
                     Technology
                   </a>
                 </li>

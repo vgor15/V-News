@@ -48,7 +48,11 @@ export default class App extends Component {
                   <News pageSize={6} country="US" category="Technology" />
                 }
               />
-              <Route path="/src/components/About.js" element={<About />} />
+              <Route 
+                path="/src/components/About.js"
+                element={
+                  <About />
+                }
             </Routes>
             <Footer />
           </Router>

@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "./components/About";
 
 //! CREATING CLASS BASED COMPONENT
 
@@ -26,9 +25,7 @@ export default class App extends Component {
               />
               <Route
                 path="/entertainment"
-                element={
-                  <News pageSize={6} country="US" category="Entertainment" />
-                }
+                element={<News pageSize={6} country="US" category="Entertainment" />}
               />
               <Route
                 path="/health"
@@ -40,15 +37,8 @@ export default class App extends Component {
               />
               <Route
                 path="/sport"
-                element={<News pageSize={6} country="US" category="Sports" />}
+                element={<News pageSize={6} country="US" category="" />}
               />
-              <Route
-                path="/technology"
-                element={
-                  <News pageSize={6} country="US" category="Technology" />
-                }
-              />
-              <Route path="/src/components/About.js" element={<About />} />
             </Routes>
             <Footer />
           </Router>

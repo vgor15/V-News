@@ -50,6 +50,7 @@ export default class App extends Component {
               />
               <Route path="/src/components/About.js" element={<About />} />
             </Routes>
+            <About />
             <Footer />
           </Router>
         </div>
