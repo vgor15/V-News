@@ -13,7 +13,7 @@ export default class App extends Component {
       <>
         <div style={{ backgroundColor: "whitesmoke" }}>
           <Navbar />
-          <News pageSize={6} country="US" category="General" />
+          <News pageSize={6} country="US" category="Sports" />
           <Footer />
         </div>
       </>

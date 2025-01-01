@@ -11,11 +11,11 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <div style={{ backgroundColor: "whitesmoke" }}>
+        <div >
           <Navbar />
-          <News pageSize={6} country="US" category="General" />
-          <Footer />
+          <News pageSize={6} country="US" category="Science" />
         </div>
+        <Footer />
       </>
     );
   }

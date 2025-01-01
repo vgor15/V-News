@@ -7,7 +7,7 @@ export class News extends Component {
   static defaultProps = {
     country: "IN",
     pageSize: 6,
-    category: "General",
+    category: "Business",
   };
 
   static propsTypes = {
@@ -78,9 +78,7 @@ export class News extends Component {
   handlePreClk = async () => {
     let url = `https://newsapi.org/v2/top-headlines?country=${
       this.props.country
-    }&category=${
-      this.props.category
-    }&apiKey=275020197cd4422097f7ca786748eb7f&page=${
+    }&category=${this.props.category}&apiKey=275020197cd4422097f7ca786748eb7f&page=${
       this.state.page - 1
     }&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
@@ -98,9 +96,7 @@ export class News extends Component {
     } else {
       let url = `https://newsapi.org/v2/top-headlines?country=${
         this.props.country
-      }&category=${
-        this.props.category
-      }&apiKey=275020197cd4422097f7ca786748eb7f&page=${
+      }&category=${this.props.category}&apiKey=275020197cd4422097f7ca786748eb7f&page=${
         this.state.page + 1
       }&pageSize=${this.props.pageSize}`;
       this.setState({ loading: true });
@@ -116,7 +112,7 @@ export class News extends Component {
 
   render() {
     return (
-      <div className="container my-5" >
+      <div className="container my-5">
         <h2
           className="text-center mb-4"
           style={{ fontFamily: "Spicy Rice", fontSize: "3rem" }}

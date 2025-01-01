@@ -116,7 +116,7 @@ export class News extends Component {
 
   render() {
     return (
-      <div className="container my-5" >
+      <div className="container-flu my-5">
         <h2
           className="text-center mb-4"
           style={{ fontFamily: "Spicy Rice", fontSize: "3rem" }}
